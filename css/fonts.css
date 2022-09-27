@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "open-sans-v29-latin-regular";
+  font-style: normal;
+  font-weight: 400;
+  /* src: local("open-sans-v29-latin-regular"), url("/fonts/open-sans-v29-latin-regular.woff") format("woff"); */
+  src: url("/fonts/open-sans-v29-latin-regular.woff") format("woff");
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="MNFarmHub">
+<meta name="author" content="Nick">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/main.css">
+{% if layout.custom_css %}
+  {% for stylesheet in layout.custom_css %}
+  <link rel="stylesheet" href="css/{{ stylesheet }}.css">
+  {% endfor %}
+{% endif %}
+<title>{{ page.title }}</title>
+</head>
+
+<body>
+{{ content }}
+</body>
+
+</html>
