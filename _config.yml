@@ -1,0 +1,10 @@
+name: "Nicks Notes"
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+  parse_block_html: true
+permalink: :title
+exclude: [README.md]
