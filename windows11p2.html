@@ -1,0 +1,57 @@
+---
+layout: page
+---
+<p><img src="/images/blogname.png" alt="Nick's Notes" /></p>
+<div id="maingrid">
+<div id="content">
+<p>
+<a href="index.html">Contact</a> |
+<a href="about.html">About</a> |
+</p>
+
+<p>
+</p>
+
+<h2>How I Deploy Windows 11 for Student Use</h2>
+<hr>
+<code>
+Boot into Audit Mode ctrl+shift-F3
+<p><img src="/images/windows 11/Step 11.png" alt="Step11" /></p>
+Eject the DVD Drive
+<p><img src="/images/windows 11/Step 12.png" alt="Step12" /></p>
+Install Office 365 ProPlus
+<p><img src="/images/windows 11/Step 13.png" alt="Step13" /></p>
+Check for Windows Updates
+<p><img src="/images/windows 11/Step 14.png" alt="Step14" /></p>
+Add WDAC Base Policy C:\Windows\System32\CodeIntegrity\CIPolicy\Active
+<p><img src="/images/windows 11/Step 15.png" alt="Step15" /></p>
+Set AppLocker Managed Installer policy to allow Intune to install Programs
+<p><img src="/images/windows 11/Step 16.png" alt="Step16" /></p>
+Sysprep and shutdown the VM
+<p><img src="/images/windows 11/Step 17.png" alt="Step17" /></p>
+Add WinPE iso
+<p><img src="/images/windows 11/Step 18.png" alt="Step18" /></p>
+Change Boot Order so DVD Drive is first
+<p><img src="/images/windows 11/Step 19.png" alt="Step19" /></p>
+Create Partition Using the remaining space
+<p><img src="/images/windows 11/Step 20.png" alt="Step20" /></p>
+Don't forget to format and set drive letter
+<p><img src="/images/windows 11/Step 21.png" alt="Step21" /></p>
+Capture Image - If you run out of Virtual Address resources close out some programs on your computer and try again
+dism.exe /capture-image /imagefile=e:\install22H2.wim /capturedir:c:\ /name:"Windows 11 22H2"
+<p><img src="/images/windows 11/Step 22.png" alt="Step22" /></p>
+Boot back into the VM to copy the wim
+<p><img src="/images/windows 11/Step 23.png" alt="Step23" /></p>
+Mount the wim and add Product Key and set time zone
+<p><img src="/images/windows 11/Step 24.png" alt="Step24" /></p>
+     <a href='https://nicksnotes.net/windows11-2.html'>Page 2 ↗</a>
+</code>
+<hr>
+  <div id="resources">
+    <p>
+     <a href='https://www.marshall.k12.mn.us'>MPS ↗</a>
+    </p>
+  </div>
+</div>
+
+</div>
